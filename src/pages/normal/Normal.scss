@@ -1,0 +1,72 @@
+.layout {
+    width: 80%;
+    height: 100%;
+
+    &__header {
+        padding: 10px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 97vh;
+        .left-menu {
+            width: 20%;
+            height: inherit;
+            padding: 20px;
+            ul {
+                padding: 0;
+                li {
+                    list-style: none;
+                    background-color: darkgray;
+                    padding: 10px;
+                    cursor: pointer;
+                
+                    
+                    &.active {
+                        background-color: blue;
+                        color: #fff;
+                    }
+
+                    &.completed {
+                        background-color: green;
+                        color: #fff;
+                    }
+
+                    &.disabled {
+                        cursor: not-allowed;
+                        opacity: 0.7;
+                    }
+
+                    &:hover {
+                        background-color: #6D7E97;
+                    }
+                }
+            }
+        }
+        .main-section {
+            width: 80%;
+            height: inherit;
+            button {
+                background-color: gray;
+                color: #fff;
+                width: 90px;
+                height: 30px;
+                border: 1px solid black;
+                font-size: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: yellow;
+    }
+    
+}
